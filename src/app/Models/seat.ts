@@ -5,3 +5,10 @@ export interface Seat {
   status: SeatStatus;    // 'available' | 'booked' | 'confirmed' | 'checked-in'
 }
 export type SeatStatus = 'available' | 'booked' | 'confirmed' | 'checked-in';
+
+export interface NewSeat {
+  id: string;            // e.g., A20C1
+  zone: string;           // Region like 'A'
+      
+  status: SeatStatus;    // 'available' | 'booked' | 'confirmed' | 'checked-in'
+}
